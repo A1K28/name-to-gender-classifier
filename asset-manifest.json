@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/name-to-gender-classifier/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/name-to-gender-classifier/static/js/main.fd1eb9df.chunk.js",
+    "main.js.map": "/name-to-gender-classifier/static/js/main.fd1eb9df.chunk.js.map",
+    "runtime-main.js": "/name-to-gender-classifier/static/js/runtime-main.a6f70ff2.js",
+    "runtime-main.js.map": "/name-to-gender-classifier/static/js/runtime-main.a6f70ff2.js.map",
+    "static/js/2.146f1644.chunk.js": "/name-to-gender-classifier/static/js/2.146f1644.chunk.js",
+    "static/js/2.146f1644.chunk.js.map": "/name-to-gender-classifier/static/js/2.146f1644.chunk.js.map",
+    "static/js/3.5fe42e95.chunk.js": "/name-to-gender-classifier/static/js/3.5fe42e95.chunk.js",
+    "static/js/3.5fe42e95.chunk.js.map": "/name-to-gender-classifier/static/js/3.5fe42e95.chunk.js.map",
+    "index.html": "/name-to-gender-classifier/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/name-to-gender-classifier/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.146f1644.chunk.js.LICENSE.txt": "/name-to-gender-classifier/static/js/2.146f1644.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/name-to-gender-classifier/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a6f70ff2.js",
+    "static/js/2.146f1644.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.fd1eb9df.chunk.js"
+  ]
+}
