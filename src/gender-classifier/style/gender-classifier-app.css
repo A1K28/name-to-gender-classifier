@@ -1,8 +1,21 @@
 body {
     background-color: black;
+    color: darkmagenta
 }
 
-div {
+.GI {
+}
+
+.gender-button {
+    color: violet;
     font-size: 2em;
-    color: whitesmoke
+}
+
+.gender-input {
+    font-size: 2em;
+}
+
+.result-text {
+    font-size: 2em;
+    color: violet;
 }
