@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/name-to-gender-classifier/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/name-to-gender-classifier/static/js/main.d76400cc.chunk.js",
-    "main.js.map": "/name-to-gender-classifier/static/js/main.d76400cc.chunk.js.map",
+    "main.js": "/name-to-gender-classifier/static/js/main.ac3fa6ed.chunk.js",
+    "main.js.map": "/name-to-gender-classifier/static/js/main.ac3fa6ed.chunk.js.map",
     "runtime-main.js": "/name-to-gender-classifier/static/js/runtime-main.a6f70ff2.js",
     "runtime-main.js.map": "/name-to-gender-classifier/static/js/runtime-main.a6f70ff2.js.map",
     "static/js/2.146f1644.chunk.js": "/name-to-gender-classifier/static/js/2.146f1644.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.a6f70ff2.js",
     "static/js/2.146f1644.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.d76400cc.chunk.js"
+    "static/js/main.ac3fa6ed.chunk.js"
   ]
 }
