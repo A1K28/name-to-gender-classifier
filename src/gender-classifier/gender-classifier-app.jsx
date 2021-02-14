@@ -8,7 +8,7 @@ export default class GenderClassifierApp extends Component {
         super(props);
         this.state = {
             input: "ASD",
-            gender: null
+            gender: [,]
         }
     }
 
@@ -21,11 +21,13 @@ export default class GenderClassifierApp extends Component {
     predict = async() => {
         let g = await predict([this.state.input]);
         this.setState({gender: g});
+        console.log(g[1]);
+        console.log(g[1]>0.5);
     }
 
     render() {
         return (
-            <div className="gender-classifier-app">
+            <div>
                 <div className='GI'>
                     <input className='gender-input' type="text" onChange={ this.handleChange } />
                     <input
@@ -35,7 +37,11 @@ export default class GenderClassifierApp extends Component {
                         onClick={this.predict}
                     />
                 </div>
-                <div className="result-text">{this.state.gender}</div>
+                <div 
+                className='result-text' 
+                style={{color : this.state.gender[1] > 0.5 ? 'violet' : 'cyan'}}>
+                    {this.state.gender[0]} {this.state.gender[1]}
+                </div>
             </div>
         )
     }
@@ -119,9 +125,11 @@ async function predict(names) {
         let ans = []
         for (let i = 1; i < res.length; i+=2) {
             let isFemale = res[i];
-            ans.push([names[Math.floor(i/2)], isFemale]);
+            ans.push([names[Math.floor(i/2)], isFemale.toExponential(2)]);
         }
         return ans;
     });
-    return ans;
+    return ans[0];
 }
+
+// predict(['asd','asdf']).then((e) => {console.log(e)});
