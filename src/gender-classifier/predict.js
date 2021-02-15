@@ -7,10 +7,7 @@ function sleep(ms) {
 
 async function loadModel() {
     console.log('Loading model');
-    // const model = await tf.loadModel('model.json');
-    const model = await tf.loadLayersModel("http://127.0.0.1:8080/model/model.json");
-    // const model = await tf.loadLayersModel("file:///Q:/scripts/github-io/gender-classifier-app/model/model.json");
-    // await sleep(2000);
+    const model = await tf.loadLayersModel("https://cors-anywhere.herokuapp.com/https://storage.googleapis.com/a1k28cloud/model/model.json");
     console.log('Model loaded');
     console.log(model);
 	return model;
