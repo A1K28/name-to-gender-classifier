@@ -1,13 +1,14 @@
-body {
-    background-color: black;
-    color: darkmagenta
+.GI {
+    display: flex;
+    flex-direction: column;
 }
 
-.GI {
+.GI-child {
+    margin: 30px;
 }
 
 .gender-button {
-    color: violet;
+    color: #333;
     font-size: 2em;
 }
 
@@ -17,5 +18,5 @@ body {
 
 .result-text {
     font-size: 2em;
-    color: violet;
+    color: darkmagenta;
 }

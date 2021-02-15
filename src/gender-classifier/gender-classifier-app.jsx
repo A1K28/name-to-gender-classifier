@@ -1,6 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import './style/gender-classifier-app.css'
+import './style/common.css';
+import './style/gender-classifier-app.css';
+import './style/my-input.css';
 import { predict } from './predict.js';
 
 export default class GenderClassifierApp extends Component {
@@ -34,13 +36,35 @@ export default class GenderClassifierApp extends Component {
         return (
             <div>
                 <div className='GI'>
-                    <input className='gender-input' type="text" onChange={ this.handleChange } />
-                    <input
-                        type="button"
-                        className='gender-button'
-                        value="Gender Me!"
-                        onClick={this.predict}
-                    />
+                    {/* <input className='gender-input' type="text" onChange={ this.handleChange } /> */}
+                    <div className="GI-child" id="container">
+                        <div className="chat-bubble" id="ghost-bubble"></div>
+                        <input id="ghost-input" type="text" placeholder="ჩაწერეთ სახელი" onChange={ this.handleChange } />
+                        <div className="ghost">
+                            <div className="ghost__face">
+                                <div className="ghost__eyes">
+                                    <div className="ghost__eyes-l"></div>
+                                    <div className="ghost__eyes-r"></div>
+                                </div>
+                                <div className="ghost__mouth"></div>
+                            </div>
+                            <div className="ghost__torso"></div>
+                            <div className="ghost__hands">
+                                <div className="ghost__hands-l"></div>
+                                <div className="ghost__hands-r"></div>
+                            </div>
+                            <div className="ghost__legs"></div>
+                        </div>
+                    </div>
+                    <div className="GI-child">
+                        <input
+                            style={{fontFamily:'MyFont', cursor:'pointer'}}
+                            type="button"
+                            className='gender-button'
+                            value="გამოიცანი სქესი!"
+                            onClick={this.predict}
+                        />
+                    </div>
                 </div>
                 <div 
                 className='result-text' 

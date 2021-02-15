@@ -1,0 +1,156 @@
+:root, input[type='text'] {
+    font-size: 20px;
+    /* font-family: 'Chivo'; */
+    font-family: MyFont;
+}
+body {
+    margin-top: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+}
+#container {
+    position: relative;
+}
+input[type='text'] {
+    padding: 1em;
+    border: none;
+    border-radius: 0.2em;
+    background: gray;
+    transition: background 0.3s;
+}
+input[type='text']:focus {
+    background: white;
+}
+input[type='text']::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+input[type='text']:focus + .ghost {
+    background: rgba(255, 255, 255, 0.2);
+    color: transparent;
+}
+input[type='text']:focus + .ghost .ghost__torso {
+    transform: translate(-50%, 42px) scaleY(0.9);
+}
+input[type='text']:focus + .ghost .ghost__eyes * {
+    background: rgba(255, 255, 255, 0.6);
+}
+input[type='text']:focus + .ghost .ghost__face {
+    transform: translate(-50%, 0.4em);
+}
+input[type='text']:focus + .ghost .ghost__mouth {
+    transform: scaleY(0.6);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+input[type='text']:focus + .ghost .ghost__hands {
+    transform: translate(-50%, 0.2em);
+}
+input[type='text']:focus + .ghost .ghost__hands * {
+    background: transparent;
+}
+input[type='text']:focus + .ghost .ghost__legs {
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 0.6em;
+    transform: translateX(-50%) scaleY(0.85);
+    transform-origin: top;
+}
+.chat-bubble {
+    text-align: center;
+    width: 100%;
+    max-width: 80vw;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+    margin-bottom: 7em;
+    color: white;
+}
+@keyframes float {
+    from {
+        transform: translateY(0.5em);
+   }
+    to {
+        transform: translateY(-0.5em);
+   }
+}
+.ghost {
+    background: white;
+    color: white;
+}
+.ghost * {
+    transition: all 0.3s;
+}
+.ghost > * {
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+}
+.ghost__face {
+    margin-bottom: 1em;
+    background: none;
+}
+.ghost__face .ghost__eyes-l, .ghost__face .ghost__eyes-r {
+    width: 0.8em;
+    height: 0.8em;
+    background: #333;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 0.4em;
+}
+.ghost__face .ghost__eyes-l {
+    right: 1em;
+}
+.ghost__face .ghost__eyes-r {
+    left: 1em;
+}
+.ghost__face .ghost__mouth {
+    width: 0.5em;
+    height: 0.3em;
+    border-radius: 50px;
+    border: 0.2em solid #333;
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.ghost__face .ghost__mouth--open {
+    border-top: 0.2em solid #333;
+    height: 0.2em;
+}
+.ghost__torso {
+    width: 5em;
+    height: 7em;
+    background: inherit;
+    border-radius: 100px;
+    box-shadow: 0 0 12px rgba(66, 66, 66, 1);
+    transition: all 0.3s background 0.4s 0.1s;
+    transform: translate(-50%, 50px);
+    z-index: -1;
+}
+.ghost__hands {
+    color: inherit;
+}
+.ghost__hands-r, .ghost__hands-l {
+    border-radius: 100px;
+    width: 1em;
+    height: 1.5em;
+    background: white;
+    box-shadow: 0 4px 4px rgba(51, 51, 51, 0.3);
+}
+.ghost__hands-r {
+    transform: translate(1.5em, 1em) rotate(15deg);
+}
+.ghost__hands-l {
+    transform: translate(-1.5em, 2.5em) rotate(-15deg);
+}
+.ghost__legs {
+    width: 5em;
+    height: 1.5em;
+    top: 100%;
+    background: inherit;
+    box-shadow: 0 0 12px rgba(66, 66, 66, 1);
+    border-bottom-left-radius: 0.4em;
+    border-bottom-right-radius: 0.4em;
+}
