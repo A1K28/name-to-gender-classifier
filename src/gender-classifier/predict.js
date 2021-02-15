@@ -7,9 +7,9 @@ function sleep(ms) {
 
 async function loadModel() {
     console.log('Loading model');
-    const model = null;
+    // const model = null;
     // const model = await tf.loadLayersModel("https://cors-anywhere.herokuapp.com/https://storage.googleapis.com/a1k28cloud/model/model.json");
-    // const model = await tf.loadLayersModel("https://cors-anywhere-client.herokuapp.com/https://storage.googleapis.com/a1k28cloud/model/model.json");
+    const model = await tf.loadLayersModel("https://cors-anywhere-client.herokuapp.com/https://storage.googleapis.com/a1k28cloud/model/model.json");
     console.log('Model loaded');
     console.log(model);
 	return model;
