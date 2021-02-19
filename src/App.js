@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import GenderClassifierApp from './gender-classifier/gender-classifier-app';
 

@@ -7,9 +7,13 @@ function sleep(ms) {
 
 async function loadModel() {
     console.log('Loading model');
-    // const model = null;
-    // const model = await tf.loadLayersModel("https://cors-anywhere.herokuapp.com/https://storage.googleapis.com/a1k28cloud/model/model.json");
-    const model = await tf.loadLayersModel("https://cors-anywhere-client.herokuapp.com/storage.googleapis.com/a1k28cloud/model/model.json");
+    let model = null;
+    try {
+        model = await tf.loadLayersModel("https://cors-anywhere-client.vercel.app/storage.googleapis.com/a1k28cloud/model/model.json");
+    } catch(err) {
+        console.log("Failed to fetch model from vercel, fetching from heroku...");
+        model = await tf.loadLayersModel("https://cors-anywhere.herokuapp.com/storage.googleapis.com/a1k28cloud/model/model.json");
+    }
     console.log('Model loaded');
     console.log(model);
 	return model;
@@ -62,7 +66,7 @@ export async function predict(names) {
         let ans = []
         for (let i = 1; i < res.length; i+=2) {
             let isFemale = res[i];
-            ans.push([names[Math.floor(i/2)], isFemale.toExponential(2)]);
+            ans.push([names[Math.floor(i/2)], isFemale]);
         }
         return ans;
     });
