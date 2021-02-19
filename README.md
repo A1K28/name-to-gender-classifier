@@ -3,6 +3,11 @@
 
 [See the python code on my google colab here](https://colab.research.google.com/drive/1bj8WG2Wqngo7R_7G3RQW2tXz95RfA82D?usp=sharing).
 
+## Demo
+Demonstration of the project:
+
+![](gender-classifier.png)
+
 ## How it works:
 All Georgian names (with count >= 5) are taken and used for training the model. 
 In total ~14k names are used with approximately 45:55-F:M distribution.
