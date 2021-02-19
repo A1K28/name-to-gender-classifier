@@ -13,9 +13,8 @@ In short, the input is represented with one-hot encoded vectors for names; such 
 
 MAXLEN is a hyperparameter and VOCABLEN is derived after reading the input data (it depends on the char_idx dictionary, which is a map of all present characters to a number, e.g. 'a' : 0, and so on).
 
-## The Twist:
-We shuffle the train-test data for N iterations of M epochs each to help reduce overfitting.
-I do not have much information this after researching. It was simply a choice since I thought it would help the process.
+Moreover, we shuffle the train-test data for N iterations of M epochs each to help reduce overfitting.
+I do not have much information on this after researching. It was simply a choice since I thought it would help the process.
 
 ## Future Improvements:
 1. Use the count variable for each name to feed the LSTM cells more info about each name.
