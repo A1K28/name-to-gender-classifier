@@ -24,7 +24,6 @@ I do not have much information on this after researching. It was simply a choice
 ## Future Improvements
 1. Use the count variable for each name to feed the LSTM cells more info about each name.
 2. Aid overfitting even more (this is not so easy to fix without trial and error).
-3. Maybe create my own model before getting a phd, but I doubt that it would work better than it does now.
 
 ## Credits for the Model
 The model was constructed by [prdeepakbabu](https://github.com/prdeepakbabu) at [LSTM_RNN_architecture.jpg](https://github.com/prdeepakbabu/Python/blob/master/Deep%20learning%20gender/LSTM_RNN_architecture.jpg)
