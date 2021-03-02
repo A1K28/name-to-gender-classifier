@@ -11,6 +11,7 @@ Demonstration of the project:
 ## The Dataset (not public)
 All Georgian names (with count >= 5) are taken and used for training the model. 
 In total ~14k names are used with approximately 45:55-F:M distribution.
+The dataset was legally acquired from gov.ge; I am not making it public to not get in any trouble.
 
 ## The Training
 We use a 2-stacked LSTM model with MAXLEN LSTM cells per stack. Each cell accepts a vector of length VOCABLEN.
