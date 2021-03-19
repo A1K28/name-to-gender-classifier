@@ -1,5 +1,5 @@
 # Georgian name-to-gender classifier with 94%+ accuracy
-[See the static webapp on my github pages](https://a1k28.github.io/name-to-gender-classifier/) - (use WIFI: op will cost ~14mb on page load, since no api is present).
+[See the static webapp on my github pages](https://a1k28.github.io/name-to-gender-classifier/) - (use WIFI: the model will cost ~14mb on page load).
 
 [See the python code on my google colab here](https://colab.research.google.com/drive/1bj8WG2Wqngo7R_7G3RQW2tXz95RfA82D?usp=sharing).
 
@@ -11,7 +11,7 @@ Demonstration of the project:
 ## The Dataset (not public)
 All Georgian names (with count >= 5) are taken and used for training the model. 
 In total ~14k names are used with approximately 45:55-F:M distribution.
-The dataset was legally acquired from gov.ge; I am not making it public to not get in any trouble.
+The dataset was legally acquired from the Georgian government. I am not making it public to not get in any trouble.
 
 ## The Training
 We use a 2-stacked LSTM model with MAXLEN LSTM cells per stack. Each cell accepts a vector of length VOCABLEN.
