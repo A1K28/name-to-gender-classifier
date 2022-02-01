@@ -1,5 +1,7 @@
 # Georgian name-to-gender classifier with 94%+ accuracy
-[See the static webapp on my github pages](https://a1k28.github.io/name-to-gender-classifier/) - (use WIFI: the model will cost ~14mb on page load).
+
+Static webpage is currently down due to no more firebase support.
+~~[See the static webapp on my github pages](https://a1k28.github.io/name-to-gender-classifier/) - (use WIFI: the model will cost ~14mb on page load).~~
 
 [See the python code on my google colab here](https://colab.research.google.com/drive/1bj8WG2Wqngo7R_7G3RQW2tXz95RfA82D?usp=sharing).
 
